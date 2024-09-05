@@ -81,7 +81,7 @@ void setup() {
   // Вывод логов с задержками
   for (int i = 0; i < numLines; i++) {
     Serial.println(bootlog[i]);
-    delay(dlclock);  // Задержка 500 миллисекунд между строками
+    delay(dlclock);  // Задержка между строками, параметр указан в kernel.h
   }
   Serial.println("");
   Serial.print("#!/ ");
