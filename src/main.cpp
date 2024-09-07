@@ -93,7 +93,7 @@ void loop() {
   if (Serial.available() > 0) {
     // Чтение входящих данных
     String incomingMessage = Serial.readStringUntil('\n');
-    incomingMessage.trim();
+    incomingMessage.trim();  
 
     executeCommand(incomingMessage);
   }
