@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <src/kernel.h>
 #include <src/Utils.h>
+#include <src/modules.h>
 
 const char* bootlog[] = {
   "[   0.000000] Booting Arduino...",
@@ -56,7 +57,7 @@ Command commands[] = {
   {"whoami", whoami},
   {"uname", uname},
   {"help", help},
-  {"kill 0xff", kl}
+  {"kill 0xff", panic}
 };
 
 const int numCommands = sizeof(commands) / sizeof(commands[0]);
