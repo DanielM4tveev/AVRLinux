@@ -75,8 +75,8 @@ void executeCommand(const String& command) {
 
 void setup() {
   // Инициализация серийного порта
-  Serial.begin(SerialPort);
-  pinMode(DefaultLed, OUTPUT);
+  Serial.begin(_DEV_SERIAL_);
+  pinMode(_HW_LED_DEFAULT_, OUTPUT);
   
   // Вывод логов с задержками
   for (int i = 0; i < numLines; i++) {
