@@ -11,7 +11,7 @@ void whoami() {
 
 void uname() {
     const char* infoLines[] = {
-        "System: Arduino Uno",    // Имя платы
+        "System: " _HW_NAME_,    // Имя платы
         "Version: 1.0.0",         // Версия прошивки
         "CPU Frequency: 16 MHz", // Частота процессора
         "Compile Date: " __DATE__, // Дата компиляции

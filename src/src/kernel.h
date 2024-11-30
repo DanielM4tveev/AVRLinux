@@ -14,6 +14,7 @@
 #define _SYS_WD_TIMEOUT_MS_     1000            // Watchdog timeout (ms)
 #define _SYS_DEBOUNCE_DELAY_    50              // Button debounce delay (ms)
 #define _SYS_LOG_LEVEL_         3               // Log level for system (0-quiet, 3-verbose)
+#define _HW_NAME_ "EmbSYS"
 
 // Memory parameters
 #define _MEM_EEPROM_SIZE_       1024            // EEPROM size in bytes
